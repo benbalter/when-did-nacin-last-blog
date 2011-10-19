@@ -1,0 +1,12 @@
+/* Author:
+
+*/
+
+log( 'nacin sucks');
+
+
+
+
+
+
+
