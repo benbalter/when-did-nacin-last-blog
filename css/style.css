@@ -206,6 +206,9 @@ body {text-align: center;}
 header {margin-top: 10px; font-size: 25px;}
 #main {margin-top: 10px; font-size: 100px; text-transform: uppercase;}
 
+#source {bottom: 0; right: 0; position: absolute; padding: 10px;}
+#source a, #souce a:visited { color: #444; text-decoration: none;}
+#source a:hover {text-decoration: underline; }
 
 
 

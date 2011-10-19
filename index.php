@@ -62,6 +62,8 @@ foreach ( $rss_items as $item ) {
 	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
 	<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
 <![endif]-->
-
+<div id="source">
+	<a href="https://github.com/benbalter/When-Did-Nacin-Last-Blog">source</a>
+</div>
 </body>
 </html>
