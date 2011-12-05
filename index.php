@@ -1,7 +1,7 @@
 <?php
 require_once( '../../wp-load.php' );
 include_once(ABSPATH . WPINC . '/feed.php');
-$rss = fetch_feed( 'http://andrewnacin.com/feed/?foo=true' );
+$rss = fetch_feed( 'http://nacin.com/feed/?foo=true' );
 
 if ( is_wp_error( $rss ) )
 	wp_die( 'error' );
