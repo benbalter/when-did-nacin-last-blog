@@ -1,7 +1,7 @@
 <?php
 require_once( '../../wp-load.php' );
 include_once(ABSPATH . WPINC . '/feed.php');
-$rss = fetch_feed( 'http://nacin.com/feed/?foo=true' );
+$rss = fetch_feed( 'http://ben.balter.com/feed/?foo=true' );
 
 if ( is_wp_error( $rss ) )
 	wp_die( 'error' );
@@ -17,7 +17,7 @@ $rss_items = $rss->get_items(0, 1);
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>When Did Nacin Last Blog?</title>
+	<title>When Did Balter Last Blog?</title>
 	<meta name="description" content="">
 	<meta name="author" content="Benjamin J. Balter">
 
@@ -32,7 +32,7 @@ $rss_items = $rss->get_items(0, 1);
 
 <div id="container">
 	<header>
-		When Did Nacin Last Blog?
+		When Did Balter Last Blog?
 	</header>
 	<div id="main" role="main">
 <?php
