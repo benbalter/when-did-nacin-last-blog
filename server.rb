@@ -12,12 +12,6 @@ def last_post
   feed.items.first
 end
 
-def timestamp
-  feed.items.first.date
-end
-
-puts
-
 get "/" do
   erb :index, :locals => { :relative_time => time_ago_in_words(last_post.date), :link => last_post.link }
 end
