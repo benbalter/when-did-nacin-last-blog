@@ -4,14 +4,10 @@ require 'open-uri'
 require 'action_view'
 include ActionView::Helpers::DateHelper
 
-
-def last_post
+get "/" do
   url  = "http://nacin.com/feed/?#{Time.now.to_i}"
   rss  = open(url).read
   feed = RSS::Parser.parse(rss)
-  feed.items.first
-end
-
-get "/" do
+  last_post = feed.items.first
   erb :index, :locals => { :relative_time => time_ago_in_words(last_post.date), :link => last_post.link }
 end
